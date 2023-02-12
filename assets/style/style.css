@@ -1,0 +1,254 @@
+/* Fonts */
+@font-face {
+    font-family: PostNoBillsJaffna;
+    src: url("../fonts/post-no-bills-jaffna-cufonfonts-webfont/PostNoBillsJaffna-Light.woff");
+}
+@font-face {
+    font-family: Raleway;
+    src: url("../fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+/* main style */
+.container{
+    max-width: 1270px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* Header */
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: transparent;
+    color: #fff;
+    padding: 18px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .3s;
+}
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    display: flex;
+    flex-direction: column;
+}
+.header__logo-sub{
+    width: 158px;
+    height: 37px;
+    font-family: PostNoBillsJaffna;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #C56004;
+}
+.header__logo-sup{
+    padding-top: 13px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+
+    /* identical to box height */
+    letter-spacing: 0.12em;
+
+    color: #FFFFFF;
+}
+.logo__img{
+    max-width: 150px;
+}
+.nav__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #C56004;
+}
+.nav__item{
+    margin-right: 47px;
+    font-weight: bold;
+}
+.nav__item:last-child{
+    margin-right: 0px;
+}
+.nav__link{
+    cursor: pointer;
+}
+.nav__link:hover{
+    opacity: .7;
+}
+.header__scroll{
+    background-color: #1b2735;
+}
+
+/* Main */
+.main{
+    background:url("../images/_118231104_evija-in-london_2\ 1.png") no-repeat center;
+    min-height: 100vh;
+    background-size: cover;
+}
+.main__wrapper{
+    display: flex;
+    justify-content: center;
+}
+.main__logo{
+    width: 779px;
+    height: 109px;
+    padding: 192px 0px 486px;
+    text-align: center;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    color: #D67E2C;
+}
+.main__vector{
+    text-align: center;
+}
+.main__vector-2{
+    position: relative;
+    top: -25px;
+    left: -18px;
+    /* left: 50%; */
+}
+.main__info{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 526px;
+    margin-top: 73px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #D67E2C;
+}
+.main__info-items{
+    display: flex;
+}
+.main__info-items img{
+    margin-right: 17px;
+}
+
+/* Cars */
+.cars{
+    background-color: #242B33;
+}
+.cars-icon__wrapper{
+    display: flex;
+    justify-content: center;
+}
+.cars__icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 798px;
+    margin: 100px 0 75px;
+}
+.cars__list{
+    font-family: Raleway;
+    font-weight: bold;
+    color: #fff;
+}
+.cars__list-logo{
+    margin-bottom: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+
+    color: #D67E2C;
+}
+.cars__list-item{
+    display: flex;
+    padding-bottom: 106px;
+}
+.cars__list-item:last-child{
+    padding-bottom: 20px;
+}
+.cars__list-img-1{
+    max-height: 288px;
+}
+.column-1{
+    margin-right: 85px;
+}
+.column-2{
+    margin-left: 85px;
+}
+.cars__item-name-cars{
+    margin-bottom: 20px;
+    color: #D67E2C;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: left;
+}
+.cars__item-name-cars-right{
+    margin-bottom: 20px;
+    color: #D67E2C;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: right;
+}
+.cars__list-item-count{
+    margin-top: 21px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+}
+.cars__item-specifications{
+    font-size: 24px;
+    font-style: normal;
+    line-height: 31px;
+    letter-spacing: 0em;
+}
+.cars__item-specifications span{
+    display: block;
+    margin-bottom: 20px;
+}
+.cars__item-specifications-right span{
+    display: block;
+    margin-bottom: 20px;
+}
+.cars__item-specifications-right{
+    text-align: right;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 31px;
+    letter-spacing: 0em;
+}
+
+/* Footer */
+.footer{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #1b2735;
+    color: #fff;
+    font-family: Raleway;
+}
+.footer__wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer__number{
+    margin-top: 30px;
+    font-weight: bold;
+}
